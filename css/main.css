@@ -114,7 +114,7 @@ html {
 
 img {
     display: block;
-    margin: 25% auto 10px auto;
+    /*margin: 25% auto 10px auto;*/
     max-width: 300px;
 }
 
@@ -198,30 +198,6 @@ input[id="email"].copied {
   margin-left: -150%;
   padding: 0px 10px;
 }
-
-/* Small devices */
-@media only screen and (max-height: 600px ) {
-  img { margin-top: 5%; }
-}
-
-/* Medium devices */
-@media only screen and (max-height: 768px) {
-  img { margin-top: 10%; }
-}
-
-/* Large devices */
-@media only screen and (max-height: 992px) {
-  img { margin-top: 25%; }
-}
-
-/* Large devices */
-@media only screen and (max-height: 1200px) {
-  img { margin-top: 5%; }
-}
-
-@media only screen and (min-height: 1200px) {
-  img { margin-top: 5%; }
-} 
 
 
 /* ==========================================================================
