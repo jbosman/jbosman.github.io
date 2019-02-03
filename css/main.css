@@ -114,7 +114,6 @@ html {
 
 img {
     display: block;
-    /*margin: 25% auto 10px auto;*/
     max-width: 300px;
 }
 
@@ -140,12 +139,6 @@ input[id="email"].copied {
   padding: 6px 0 5px 0;
   color: #339AF0;
   font-size: 14px;
-}
-
-.icon-container {
-  /*  position: relative;
-    top: -15px;
-    left: 90px;*/
 }
 
 .fa-circle {

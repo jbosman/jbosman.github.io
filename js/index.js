@@ -12,7 +12,7 @@ function copyEmail(){
 
 	email.blur();
 	
-	email.value = 'copied';
+	email.value = 'COPIED TO CLIPBOARD';
 	email.classList.add('copied');
 
 	setTimeout(function(){
