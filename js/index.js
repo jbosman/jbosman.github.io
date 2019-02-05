@@ -1,4 +1,4 @@
-let emailAddress = 'joseph.a.bosman@gmail.com';
+let emailAddress = 'joe@bosman.io';
 
 const email = document.querySelector('#email');
 email.value = emailAddress;
