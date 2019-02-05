@@ -16,7 +16,7 @@ function copyEmail(){
 	email.classList.add('copied');
 
 	setTimeout(function(){
-		email.value = 'joseph.a.bosman@gmail.com';
+		email.value = emailAddress;
 		email.classList.remove('copied');
 	}, 1000 )
 	
