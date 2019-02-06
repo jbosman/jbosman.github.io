@@ -134,6 +134,10 @@ input[id="email"] {
     border-radius: 6px;
 }
 
+input[id="email"]:disabled {
+  color: #222;
+}
+
 input[id="email"].copied {
   background-color: black;
   padding: 6px 0 5px 0;

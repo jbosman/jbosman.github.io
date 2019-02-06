@@ -16,10 +16,17 @@ tooltip.addEventListener( 'mouseleave', function(){
 	this.classList.add('hide')
 })
 
+const disableEmailInput = () => email.disabled = true;
+const enableEmailInput = () => email.disabled = false;
+
 function copyEmail(){
-	// When we click it will immediatly get shown on mobile
+	// When the user clicks on mobile it will immediatly get shown 
+	// and wont go away. This will remove it for better ux
 	tooltip.classList.remove('show');
 
+	// The input for the email address starts off disabled
+	// so it can't be edited
+	enableEmailInput();
 	email.select();
 
 	let success = document.execCommand('copy');
@@ -27,11 +34,16 @@ function copyEmail(){
 	email.blur();
 	
 	email.value = 'COPIED TO CLIPBOARD';
+	// Disable it again as soon as possible
+	disableEmailInput();
+
 	email.classList.add('copied');
 
 	setTimeout(function(){
+		enableEmailInput();
 		email.value = emailAddress;
 		email.classList.remove('copied');
+		disableEmailInput();
 
 	}, 1000 )
 	
